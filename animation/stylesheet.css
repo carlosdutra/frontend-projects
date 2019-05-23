@@ -1,0 +1,174 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    overflow-x: hidden;
+    font-family: var(--serif-font);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET */
+
+/* ============================ */
+
+:root {
+    --serif-font: 'Montserrat', sans-serif;
+}
+
+/* ============================ */
+
+header, section, footer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.thank-you {
+    opacity: 0;
+    transition: 1s;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+h3, ul {
+    padding: 1em 0 .4em 0;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 16em;
+    padding: 1em 3em;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
+}
+
+section img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+section img:nth-of-type(1) {
+    top: 10%;
+    right: -5%;
+}
+
+section img:nth-of-type(2) {
+    top: 20%;
+    left: -5%;
+}
+
+section img:nth-of-type(3) {
+    top: 30%;
+    right: -5%;
+}
+
+section img:nth-of-type(4) {
+    top: 40%;
+    left: -5%;
+}
+
+section img:nth-of-type(5) {
+    top: 50%;
+    left: -5%;
+}
+
+section img:nth-of-type(6) {
+    top: 60%;
+    left: -10%;
+}
+
+section img:nth-of-type(7) {
+    top: 70%;
+    right: -5%;
+}
+
+section img:nth-of-type(8) {
+    top: 80%;
+    left: -20%;
+}
+
+section img:nth-of-type(9) {
+    top: 90%;
+    right: -10%;
+}
+
+section img:nth-of-type(10) {
+    top: 100%;
+    left: -10%;
+}
+
+section img:nth-of-type(11) {
+    top: 15%;
+    left: -40%;
+}
+
+section img:nth-of-type(12) {
+    top: 0%;
+    left: -10%;
+}
+
+section {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}

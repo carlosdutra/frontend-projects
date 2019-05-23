@@ -1,0 +1,488 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    overflow-x: hidden;
+    background-color: rgb(242,242,242);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET */
+
+/* Make all divs 100% height */
+.grid > div {
+    min-height: 100vh;
+}
+
+/* Video background */
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2;    
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.video-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #444;
+    opacity: 0.55;
+    z-index: -1;
+}
+/* End video background */
+
+.header-container {
+    z-index: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1em 4em;    
+}
+
+nav a:first-child {
+    margin-right: auto;
+    color: #fff;
+    border: dashed 1px #fff;
+}
+
+.love {
+    color: #fff;
+    border: dashed 2px #fff;
+    padding: 0 .40em;
+}
+
+nav a:first-child:hover {
+    border: none;
+    transform: none;
+    color: #fff;
+    border: dashed 1px #fff;
+}
+
+nav a {
+    color: #fff;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 3vw;
+    font-family: 'Amatic SC', cursive;
+    transition: transform .3s ease-out;
+}
+
+nav a:hover {
+    transform: translate(0, -5px);
+    color: #ccc;
+}
+
+/* END OF MENU AND BACKGROUND PAGE */
+
+@font-face {
+    font-family: "Tradizionale";
+    src: url("./fonts/tradizional.otf");    
+}
+
+.big-text h1 {
+    font-size: 10em;
+    text-align: center;
+    color: #fff;
+    font-family: 'Tradizionale';
+    letter-spacing: 1rem;
+    margin: 1em 0 60px 0;
+}
+
+.big-text p {
+    text-align: center;
+}
+
+.big-text a {
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #fff;
+    padding: 20px;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 6px;
+    border-radius: 6PX;
+}
+
+.big-text a:hover {
+    color: #444;
+    background-color: #fff;
+}
+
+/* END HEADER */
+
+.title-section {
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Tradizionale';
+    padding: 1em 0;
+}
+
+.grid-location {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    padding: 0 6em;
+    text-align: center;
+}
+
+.location-card {
+    min-height: auto;
+    font-size: 16px;
+    font-family: 'Quicksand';
+}
+
+.grid-location p:first-of-type {
+    font-weight: bold;
+    font-size: 20px;
+    color: #444;
+}
+
+.location-card img {
+    box-shadow: 0px 0px 16px #444;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+.location-card p {
+    padding: .8em 0em;
+}
+
+.location-card a {
+    border: solid #444 2px;
+    padding: .5em 2em;
+    text-decoration: none;
+    font-size: 1em;
+    color: #000000;
+    transition: .4s;
+    font-family: 'Quicksand';
+}
+
+.location-card a:hover {
+    color: #fff;
+    background-color: #444;
+}
+
+/* END D2 */
+
+.d3 {
+    background-color: #444;
+    color: #fff;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+    padding: 3em;
+}
+
+.menu-pizza {
+    grid-row: span 2;
+}
+
+.menu {
+    font-family: 'Amatic SC', cursive;
+    font-size: 54px;
+    border: #fff dashed 3px;
+    padding: 1em;
+}
+
+.item-descrp {
+    font-size: .5em;
+}
+
+.menu h1 {
+    font-size: 62px;
+    text-align: center;
+    padding: 0 0 .5em 0;
+}
+
+.menu li {
+    padding: .2em 0;
+}
+
+/* START D4 */
+
+.form-contact {
+    text-align: center;
+}
+
+.form-contact input {
+    margin: .3em 0;
+    width: 64vw;
+    height: 6vh;
+    border: #444 solid 1px;
+    font-size: 1em;
+    font-family: 'Quicksand';
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid #ddd;
+}
+
+.form-contact input:focus {
+    border-bottom: 2px solid #000000;
+}
+
+.form-contact button {
+    border: solid #444 2px;
+    background-color: transparent;
+    padding: .8em 3em;
+    font-size: 1.2em;
+    color: #000000;
+    transition: .4s;
+    font-family: 'Quicksand';
+    margin-top: 1.5em;
+}
+
+.form-contact button:hover {
+    color: #fff;
+    background-color: #444;
+    cursor: pointer;
+}
+
+/* END CONTACT US */
+
+footer {
+    background-color: #444;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ddd;
+    font-family: 'Quicksand';
+    font-size: .8em;
+}
+
+/* START RESPONSIVINESS */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    
+    nav a {
+        font-size: 24px;
+    }
+    
+    .big-text h1 {
+        font-size: 5em;
+        margin-top: 3em;
+    }
+
+    .grid-location {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .location-card {
+        padding-bottom: 3em;
+    }
+
+    .title-section {
+        font-size: 72px;
+    }        
+    
+    .menu-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1em;
+        
+    }
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    nav a {
+        font-size: 28px;
+    }
+    
+    .big-text h1 {
+        font-size: 5em;
+        margin-top: 3em;
+    }
+    
+    .grid-location {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .location-card {
+        padding-bottom: 3em;
+    }
+
+    .title-section {
+        font-size: 72px;
+    }    
+    
+    .menu-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1em;
+        padding: 1em;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+    nav a {
+        font-size: 32px;
+    }
+    
+    .big-text h1 {
+        font-size: 5em;
+        margin-top: 3em;
+    }
+
+    .location-card {
+        padding-bottom: 3em;
+    }   
+    
+    .grid-location {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 0 3em 0;
+        grid-row-gap: 4em;
+    }
+
+    .title-section {
+        font-size: 54px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    nav a {
+        font-size: 36px;
+    }
+    
+    .big-text h1 {
+        font-size: 8em;
+        margin-top: 1.5em;
+    }
+    
+    .grid-location {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 0 3em 0;
+        grid-row-gap: 4em;
+    }
+
+    .title-section {
+        font-size: 54px;
+    }   
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    nav a {
+        font-size: 28px;
+    }
+
+    .big-text h1 {
+        font-size: 8em;
+    }
+
+    .grid-location {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 3em;
+        grid-row-gap: 4em;
+    }
+
+    .title-section {
+        font-size: 62px;
+    }
+}
+
+/* Extra large devices (large desktops, 1500px and up) */
+@media (min-width: 1500px) {
+
+    nav a {
+        font-size: 28px;
+    }
+
+    .big-text h1 {
+        font-size: 8em;
+    }
+
+    .grid-location {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 6em 0 0 0;
+    }
+
+    .title-section {
+        font-size: 72px;
+    }
+}
+
+/* Extra large devices (large desktops, 1900px and up) */
+@media (min-width: 1900px) {
+
+    .big-text h1 {
+        font-size: 12em;
+    }
+
+    .grid-location {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 6em 0 0 0;
+    }
+
+}
